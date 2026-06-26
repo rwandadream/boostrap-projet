@@ -1,0 +1,72 @@
+body{
+    padding-top: 70px;
+}
+.hero {
+    background-image: url("img/ethio.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 4rem; /* plus grand */
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.hero p {
+    color: white;
+    font-size: 1.8rem; /* plus grand */
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.navbar-brand{
+    color: blue !important;
+    font-size: 1.6rem;
+}
+.navbar-nav .nav-link{
+    position: relative;
+}
+
+.navbar-nav .nav-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after{
+    width: 100%;
+}
+
+.navbar-brand:hover{
+    color: whitesmoke !important;
+}
+.card img{
+    height:250px;
+    object-fit:cover;
+}
+
+#destinations,
+#circuits,
+#contact{
+    padding:80px 0;
+}
